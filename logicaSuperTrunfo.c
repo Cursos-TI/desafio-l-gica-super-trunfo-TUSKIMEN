@@ -138,7 +138,8 @@ int main() {
             printf ("carta 1 é a vencedora");}
          else {printf("carta 2 é a vencedora");}
 
-            return 0;}
+            return 0;
+        }
     
 
         
