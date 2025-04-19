@@ -97,34 +97,48 @@ int main() {
         float CARTA1 =(float) populacao+area+PIB+pontos+PIBpercapita;//variavel super poder carta 1
         float CARTA2 =(float) populacao2+area2+PIB2+pontos2+PIBpercapita2;//variavel super poder carta 2
     
+        printf ("população carta 1: %d\n",populacao);
+        printf ("população carta 2:%d\n",populacao2);
         if (populacao>populacao2){
-            printf ("carta 1 ganhou.\n)");}
-        else { printf("carta 2 venceu.\n");}
+            printf ("carta 1 é com maior população.\n)");}
+        else { printf("carta 2 é com maior população.\n");}
 
+        printf ("área da carta 1: %f\n",area);
+        printf ("área da carta 2: %f\n",area2);
         if ( area>area2) {
-            printf("carta 1  venceu.\n");}
-        else { printf("carta 2 venceu.\n");}
+            printf("carta 1 é com maior área .\n");}
+        else { printf("carta 2 é com  maior área.\n");}
 
+        printf("o PIB da carta 1:%d\n",PIB);
+        printf ("o PIB da carta 2:%d\n",PIB2);
         if (PIB>PIB2) 
-            {printf("carta 1 venceu.\n");}
-        else {printf("carta 2 venceu.\n");}
+            {printf("carta 1 tem o maior PIB.\n");}
+        else {printf("carta 2 tem o maior PIB.\n");}
 
+        printf("pontos turisticos carta 1: %d\n",pontos);
+        printf("pontos turisticos carta 2:%d\n",pontos2);
         if (pontos>pontos2){
-            printf("carta 1 venceu.\n");}
-        else{printf("carta 2 venceu.\n");}
+            printf("carta 1 tem mais pontos túristicos.\n");}
+        else{printf("carta 2 tem mais pontos túristicos.\n");}
 
+        printf("densidade carta 1:%2.f\n",densidade);
+        printf("desidade carta 2:%2.f\n",densidade2);
          if (inverso<inverso2){
-            printf ("carta 1 venceu.\n");}
-        else{printf("carta 2 venceu.\n");}
+            printf ("carta 1 tem menor densidade.\n");}
+        else{printf("carta 2 tem menor densidade.\n");}
 
+        printf("PIB percapita carta 1: %2.f\n", PIBpercapita);
+        printf("PIB percpita carta 2: %2.f\n",PIBpercapita2);
         if(PIBpercapita>PIBpercapita2){
-            printf("carta 1 venceu.\n");}
-        else{printf("carta 2 venceu.\n");}    
+            printf("carta 1 tem maior PIB percapita.\n");}
+        else{printf("carta 2 tem maior PIB percapita.\n");}    
 
-        if(CARTA1>CARTA2){
-            printf ("carta 1 venceu.\n");}
-        else {printf("carta 2 venceu.\n");}
-        }
+         
+         if (CARTA1>CARTA2){
+            printf ("carta 1 é a vencedora");}
+         else {printf("carta 2 é a vencedora");}
+
+            return 0;}
     
 
         
