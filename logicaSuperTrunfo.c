@@ -3,11 +3,6 @@
 int main(){
 
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
     int opcao;
     char estado[5];
     char codigo[5];
@@ -16,6 +11,16 @@ int main(){
     float area;
     int PIB;
     int pontos;
+
+    char estado2[5];
+    char codigo2[5];
+    char cidade2[10];
+    int populacao2;
+    float area2;
+    int PIB2;
+    int pontos2;
+    int atributo21,atributo22;
+    int atributo11, atributo12;
 
     printf("digite o seu estado.\n");
     scanf("%s", &estado);
@@ -51,13 +56,7 @@ int main(){
     printf("desidade popolacional:%.2f hab/Km²\n",densidade);
     printf("PIB per Capita: %.2f reais \n", PIBpercapita);
     
-    char estado2[5];
-    char codigo2[5];
-    char cidade2 [10];
-    int populacao2;
-    float area2;
-    int PIB2;
-    int pontos2;
+
     
     printf("digite o estado: \n");
     scanf("%s",&estado2);
@@ -112,7 +111,7 @@ if (populacao>populacao2){
 
   printf ("carta 1 venceu COM: %d de população. \n" ,populacao);
 } else if (
-  printf ("carta 2 venceucom: %d de população. \n",populacao2));
+  printf ("carta 2 venceu com: %d de população. \n",populacao2));
 else {
   printf ("empato\n");}
 
@@ -170,7 +169,155 @@ default: printf("opição invalida\n");
     break;
 }
 
+printf("Escolha um atributo para a primeira carta\n");
+printf("Entre\n");
+printf("1.População\n");
+printf("2.Área\n");
+printf("3.PIB\n");
+printf("4.Pontos turísticos\n");
+printf("5.Densidade\n");
+scanf("%d\n",&atributo11);
+
+switch (atributo11)
+{
+case 1:
+  {printf("primeiro atributo População\n");
+  atributo11;}
+  break;
+case 2:
+  {printf("primeiro atributo Área\n");
+  atributo11;}
+  break;
+case 3:
+  {printf("primeiro atributo PIB\n");
+
+  atributo11;}
+  break;
+case 4:
+  {printf("primeiro atributo pontos turísticos\n");
+  atributo11;}
+  break;
+case 5:
+  {printf("primeiro atributo densidade\n");
+  atributo11;}
+  break;
+default:printf("invalido\n");
+  break;
+}
+printf("Escolha o segundo atributo para primeira carta \n");
+printf("Entre\n");
+printf("1.População\n");
+printf("2.Área\n");
+printf("3.PIB\n");
+printf("4.Pontos turísticos\n");
+printf("5.Densidade\n");
+scanf("%d\n",&atributo12);
+
+switch (atributo12)
+{
+case 1:
+  {printf("segundo atributo População\n");
+  atributo12=populacao;}
+  break;
+case 2:
+  {printf("segundo atributo Área\n");
+  atributo12=area;}
+  break;
+case 3:
+  {printf("segundo atributo PIB\n");
+  atributo12=PIB;}
+  break;
+case 4:
+  {printf("segundo atributo pontos turísticos\n");
+  atributo12=pontos;}
+  break;
+case 5:
+  {printf("segundo atributo densidade\n");
+  atributo12=inverso;}
+  break;
+default:printf("invalido\n");
+  break;
+}
+if (atributo11 == atributo12)
+{ printf("mesmos atributos!\n");}
+else{
+int atributo21,atributo22;
+printf("Escolha um atributo para a segunda carta\n");
+printf("Entre\n");
+printf("1.População\n");
+printf("2.Área\n");
+printf("3.PIB\n");
+printf("4.Pontos turísticos\n");
+printf("5.Densidade\n");
+scanf("%d\n",&atributo21);
+
+switch (atributo21)
+
+{
+case 1:
+  {printf("primeiro atributo População\n");
+  atributo21=populacao2;}
+  break;
+case 2:
+  {printf("primeiro atributo Área\n");
+  atributo21=area2;}
+  break;
+case 3:
+  {printf("primeiro atributo PIB\n");
+  atributo21=PIB2;}
+  break;
+case 4:
+  {printf("primeiro atributo pontos turísticos\n");
+  atributo21=pontos2;}
+  break;
+case 5:
+  {printf("primeiro atributo densidade\n");
+  atributo21=inverso2;}
+  break;
+default:printf("invalido\n");
+  break;
+}
+printf("Escolha o segundo atributo para segunda carta \n");
+printf("Entre\n");
+printf("1.População\n");
+printf("2.Área\n");
+printf("3.PIB\n");
+printf("4.Pontos turísticos\n");
+printf("5.Densidade\n");
+scanf("%d\n",&atributo22);
+
+switch (atributo22)
+{
+case 1:
+  {printf("primeiro atributo População\n");
+  atributo22=populacao2;}
+  break;
+case 2:
+  {printf("primeiro atributo Área\n");
+  atributo22=area2;}
+  break;
+case 3:
+  {printf("primeiro atributo PIB\n");
+  atributo22=PIB2;}
+  break;
+case 4:
+  {printf("primeiro atributo pontos turísticos\n");
+  atributo22=pontos2;}
+  break;
+case 5:
+  {printf("primeiro atributo densidade\n");
+  atributo22=inverso2;}
+  break;
+default:printf("invalido\n");
+  break;
+}}
+float soma1 =(float) atributo11+atributo12;
+float soma2 =(float) atributo21+atributo22;
+
+soma1>soma2 ? printf ("carta 1 ganhou!\n") : printf("carta 2 ganhou\n");
+
+  
+
 
  return 0;
 }
-    
